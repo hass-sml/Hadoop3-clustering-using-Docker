@@ -1,60 +1,62 @@
-# Hadoop Multinode Cluster Development Environment with Pig using Docker and Docker Compose
+# 🐳 Dockerized Hadoop 
 
-## Description
-This repository provides a Docker-based development environment for setting up a Hadoop multinode cluster along with Pig for data processing. It utilizes Docker and Docker Compose to simplify the setup process.
+This repository provides Docker configurations for easily deploying Hadoop within containers, offering various setup options.
 
-## Features
-- Easily spin up a multinode Hadoop cluster environment for development and testing purposes.
-- Includes Pig for data processing tasks.
-- Docker and Docker Compose for seamless containerized deployment.
+## Table of Contents
 
-## Installation
-To get started, follow these steps:
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+ - [Single-Node Setup](#single-node-setup)
+ - [Multi-Node Setup](#multi-node-setup)
+ - [Additional Configurations](#additional-configurations)
+- [Usage](#usage)
+- [Contributing](#contributing) 
+- [License](#license)
 
-1. Clone this repository to your local machine:
+## Introduction ✨
+
+Dockerized Hadoop streamlines the process of running Apache Hadoop in a containerized environment. It offers adaptability in configuring both single-node and multi-node Hadoop clusters.
+
+## Prerequisites 
+
+Before getting started, ensure you have the following:
+
+- **Docker:** [Install Docker](https://docs.docker.com/get-docker/) 
+- **Docker Compose:** [Install Docker Compose](https://docs.docker.com/compose/install/) for streamlined management of multi-container setups.
+
+## Getting Started 🚀
+
+### Multi-Node Setup
+
+1. **Clone the repository:**
+
    ```bash
-   git clone https://gitlab.com/mahdiboughrous/hadoop3-multi-node-cluster.git
+   git clone [https://github.com/yourusername/dockerized-hadoop.git](https://github.com/yourusername/dockerized-hadoop.git)
    ```
-2. Navigate to the project directory:
-    ```bash
-    cd hadoop3-multi-node-cluster
-    ```
+2. Navigate to the directory:
+ ```bash
+   cd dockerized-hadoop/multi-node
+```
+3. Build the Docker image:
+ ```bash
+   docker compose build
+```
+4. start the Docker image:
+ ```bash
+   docker compose up -d
+ ```
 
-3. Place your data files (e.g., CSV) in the shared-data folder. These files will be accessible in the /data folder in the `namenode` container.
+## Additional Configurations 🔧
 
-4. Place your Pig scripts in the pig-scripts folder. These scripts will be accessible in the Pig container `pig-node`.
-
-5. Build the Docker images:
-    ```bash
-    docker-compose build
-    ```
-6. Start the cluster using Docker Compose:
-    ```bash
-    docker-compose up -d
-    ```
+Find more specialized configurations within the repository, including options for Pig, Hive, and other components.
 
 ## Usage
 
-Use the provided Hadoop cluster environment for your development and testing tasks.
-Utilize Pig for data processing workflows.
+## Contributing 🙌
 
-## Contributing
+We appreciate your help in improving this repository! Submit issues or pull requests for bug fixes, enhancements, or new features.
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+## License ⚖️ 
 
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
-
-## License
-
-This project is licensed under the [MIT License](https://gitlab.com/mahdiboughrous/hadoop3-multi-node-cluster/-/blob/a1ca45015cd425c9c2adfbe77ba3c06e0d3f20a6/LICENSE).
-
-## Contact
-
-For any questions or concerns, feel free to contact the project maintainer:
-
-* [Mahdi Boughrous](mailto:mahdi@boughrous.com) 
-
+This project adheres to the MIT License. 

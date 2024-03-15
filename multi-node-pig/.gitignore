@@ -1,0 +1,5 @@
+pig-scripts/*
+shared-keys/
+shared-data/*
+!pig-scripts/script.pig
+!shared-data/vol.csv

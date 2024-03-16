@@ -1,3 +1,4 @@
+## This Repository was made by @mahdiboughrous
 # 🐳 Dockerized Hadoop 
 
 This repository provides Docker configurations for easily deploying Hadoop within containers, offering various setup options.
